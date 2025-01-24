@@ -1,5 +1,3 @@
-import os
-
 from typing import Literal
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
 from langgraph.prebuilt import create_react_agent
@@ -8,7 +6,7 @@ from langgraph.types import Command
 from langchain_openai import ChatOpenAI
 from prompts import AGENT_A_PROMPT, AGENT_B_PROMPT
 
-# llm model
+
 llm = ChatOpenAI(model="gpt-4o", temperature=0)
 
 # Conversation agent and node

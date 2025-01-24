@@ -15,14 +15,6 @@ def process_input(user_request: str):
     memory = MemorySaver()
     graph = workflow.compile(checkpointer=memory)
 
-    # Save graph image
-    image_bytes = graph.get_graph().draw_mermaid_png()
-    output_file_path = "output_image.png"
-    # Save the bytes to a file
-    with open(output_file_path, "wb") as file:
-        file.write(image_bytes)
-
-
     thread = {"configurable": {"thread_id": "1"}}
     events = graph.stream(
         {
