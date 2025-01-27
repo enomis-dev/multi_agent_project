@@ -11,8 +11,9 @@ WORKDIR /app/src
 # Copy the Python application files to the container's working directory
 COPY src /app/src
 
-# Expose port 5000 for the Flask application
-EXPOSE 5000
+# Expose port 8501 for the Streamlit application
+EXPOSE 8501
 
-# Run the Flask application
-CMD ["python", "app.py"]
+# Run the Streamlit application
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+

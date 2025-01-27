@@ -8,6 +8,9 @@ Example of basic multi agent application in which we have 2 agents.
 
 ![Multi agent application flow](images/flow_diagram.png)
 
+
+![Application example with demonstrated persistence](images/persistence.PNG)
+
 # How to run it locally
 
 ```
@@ -85,10 +88,10 @@ Variable value: your-api-key-here
 
 ```
 cd src
-python app.py
+streamlit run app.py
 ```
 
-The app will show at http://127.0.0.1:5000
+Go to http://localhost:8501/ to see the running app
 
 
 ## Dockerfile
@@ -100,6 +103,6 @@ docker build -t myapp .
 
 - run the image
 ```
-docker run -e OPENAI_API_KEY=your_openai_api_key -p 5000:5000 myapp
+docker run -e OPENAI_API_KEY=your_openai_api_key -p 8501:8501 myapp
 ```
-The app will show at http://127.0.0.1:5000
+Go to http://localhost:8501/ to see the running app
