@@ -13,6 +13,8 @@ Example of basic multi agent application in which we have 2 agents.
 
 # How to run it locally
 
+The app can be either ran by creating a python virtual env locally or by building and running a docker image
+
 ```
 git clone https://github.com/enomis-dev/multi_agent_project.git
 ```
@@ -65,7 +67,9 @@ source ~/.zshrc   # For zsh
 
 
 2. On Windows
-Temporary Setup (valid for the current terminal session):
+
+- Temporary Setup (valid for the current terminal session):
+
 - In Command Prompt:
 set OPENAI_API_KEY=your-api-key-here
 
