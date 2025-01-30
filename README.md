@@ -31,7 +31,7 @@ python -m venv multi_agent
 
 Windows
 ```
-python -m venv multi_agent
+venv\Scripts\activate
 ```
 
 macOS/Linux
